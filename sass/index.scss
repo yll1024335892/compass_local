@@ -1,4 +1,26 @@
 @import "compass/css3";
+$screen-xs-max:'768px';
+$screen-sm-min:'768px';
+$screen-sm-max:'992px';
+$screen-md-min:'992px';
+$screen-md-max:'1200px';
+$screen-lg-min:'1200px';
 .xx{
   @include border-radius(0.5px);
+}
+//小于768px
+@media (max-width: $screen-xs-max) {
+
+}
+//大于768px，小于992px
+@media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
+
+}
+//大于992px，小于1200px
+@media (min-width: $screen-md-min) and (max-width: $screen-md-max) {
+
+}
+//大于1200px
+@media (min-width: $screen-lg-min) {
+
 }
