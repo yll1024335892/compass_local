@@ -1,4 +1,5 @@
 require 'compass/import-once/activate'
+Encoding.default_external = Encoding.find('utf-8')
 # Require any additional compass plugins here.
 
 #部署时将其设置为项目的根目录:
