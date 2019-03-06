@@ -27,3 +27,7 @@
 		border-radius: 0.5px;
 	}
 ```
+```
+//线性渐变  其中lighten(red, 20%)是使用sass的加亮顏色功能
+.box{ @include background(linear-gradient(lighten(red, 20%), red));}
+```
