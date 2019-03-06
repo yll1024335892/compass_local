@@ -31,3 +31,9 @@
 //线性渐变  其中lighten(red, 20%)是使用sass的加亮顏色功能
 .box{ @include background(linear-gradient(lighten(red, 20%), red));}
 ```
+### Sprite的处理
+```
+@import "icons/*.png"; @include all-icons-sprites; //all-後面接著的「icons」代表著是資料夾名稱 
+//效果，自动将小的图标变成精灵图
+.icons-sprite, .icons-facebook, .icons-twitter, .icons-yahoo { background: url('icons-s0859518ac7.png') no-repeat; } .icons-facebook { background-position: 0 0; } .icons-twitter { background-position: 0 -32px; } .icons-yahoo { background-position: 0 -64px; } 
+```
