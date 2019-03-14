@@ -37,3 +37,19 @@
 //效果，自动将小的图标变成精灵图
 .icons-sprite, .icons-facebook, .icons-twitter, .icons-yahoo { background: url('icons-s0859518ac7.png') no-repeat; } .icons-facebook { background-position: 0 0; } .icons-twitter { background-position: 0 -32px; } .icons-yahoo { background-position: 0 -64px; } 
 ```
+### 动画	
+```
+@include keyframes("spin"){
+  form{ width: 0px;}
+  to{ width: 100px;}
+}
+编译后  
+@-moz-keyframes spin { form { width: 0px; }
+  to { width: 100px; } }
+@-webkit-keyframes spin { form { width: 0px; }
+  to { width: 100px; } }
+@keyframes spin { form { width: 0px; }
+  to { width: 100px; } }
+  //使用
+   @include  animation(spin .5s forwards);
+```
